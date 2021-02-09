@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./PrezentacjaPile/Images/Logo-Small-Letterhead.jpg" alt="GDG logo" style="height: 50px;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,28 +44,28 @@
         </div>
       </nav>
     <!-- Home -->
-    <section>
-        <div class="container-fluid">
+    <section id="home" class="p-5 text-center" style="background-image: url(./PrezentacjaPile/Images/vincent-wright-MHWschr0Pzs-unsplash.jpg); height: 960px;">
+        <div class="container-fluid text-center">
             <div class="row">
-                <div class="col">
+                <div class="col-lg-6 justify-content-center align-items-center">
                     <p>Oasys Pile is a software that allows you to calculate the  pile load capacity,
                         settlement and the displacement of the surrounding ground. It is a very useful software, so let’s learn how to get the most of it...</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-lg-6 justify-content-center align-items-center">
                     <a href="#">LET’S GET STARTED...</a>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-lg-6 justify-content-center align-items-center">
                     <p>Prepared for Pile version 19.7</p>
                 </div>
             </div>
         </div>
     </section>
 <!-- Analysis Options -->
-    <section>
+    <section id="analysisOptions">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
@@ -73,14 +73,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4"></div>
+                <div class="col-lg-4"><img src="./PrezentacjaPile/Images/analysisOptions_capacity.PNG" alt="Analysis Option - Capacity"></div>
+                <div class="col-lg-4"><img src="./PrezentacjaPile/Images/analysisOptions_settlement.PNG" alt="Analysis Option - Settlement"></div>
+                <div class="col-lg-4"><img src="./PrezentacjaPile/Images/analysisOptions_capacity_settlement.PNG" alt="Analysis Option - Capacity & Settlement"></div>
             </div>
         </div>
     </section>
     <!-- Capacity Data -->
-    <section>
+    <section id="capacityData">
         <div class="container-fluid">
             <div class="row">
                 <div class="column">
@@ -90,14 +90,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4"></div>
+                <div class="col-lg-4"><img src="./PrezentacjaPile/Images/capacityCalculations_workingLoad.PNG" alt="Capacity Calculations - Working Load"></div>
+                <div class="col-lg-4"><img src="./PrezentacjaPile/Images/capacityCalculations_designResistance.PNG" alt="Capacity Calculations - Design Resistance"></div>
+                <div class="col-lg-4"><img src="./PrezentacjaPile/Images/capacityCalculations_countryCode.PNG" alt="Capacity Calculations - Code Based"></div>
             </div>
         </div>
     </section>
     <!-- Working Load -->
-    <section>
+    <section id="WorkingLoad">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
@@ -108,8 +108,92 @@
                 <div class="col">
                     <p>Input global FOS or partial factors as required, then click ‘Finish’ to get to the next stage.</p>
                 </div>
+                <div class="col"><img src="./PrezentacjaPile/Images/workingLoadFOS.PNG" alt="Working Load Partial Facctors"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Design Resistance -->
+    <section id="designResistance">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1>DESIGN RESISTANCE</h1>
+                </div>
+            </div>
+            <!-- Nested Rows -->
+            <!-- Row Level 1 -->
+            <div class="row">
+                <!-- Row Level 2 -->
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Pile does not support Irish Nationa Annex to EC7. If you want to carry out the analysis for a site located in ireland you have to type the appropriate FOS yourself. Have a look at the I.S. EN 1997-1:2005+AC:2009. Do not forget to type appropriate FOS for your pile type and the model factor of 1.75. When you are ready - press ‘Finish’ 
+                        </p>
+                    </div>
+                </div>
+                <!-- Row Level 2 -->
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Country Code -->
+    <section id="countryCode">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1>COUNTRY CODE</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Choose the type of pile your analysis requires, then click ‘Finish’ to get to the next stage.</p>
+                </div>
                 <div class="col">
                     
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pile Properties -->
+    <section id="pileProperties">
+        <div class="container-fluid">
+            <!-- Nested Rows -->
+            <!-- Row Level 1 -->
+            <div class="row">
+                <!-- Row Level 2 -->
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            As you chose the Calculation Method already, you probably have a good idea on what is the pile type you would like to consider. Hover over the pile cross-section drop-down list to see what options do you have.
+                        </p>
+                    </div>
+                </div>
+                <!-- Row Level 2 -->
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            What material is your pile consructed of? Whether it is steel or concrete, be sure to type-in the right Young’s Modulus.  My pick would be: 20GPa for concrete and 210GPa for steel. Do you agree?
+                        </p>
+                    </div>
+                </div>
+                <!-- Row Level 2 -->
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            What is the pile-cap like? Will the pile head be free or Fixed? Select on radio-button what would you like the software to consider.
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+
                 </div>
             </div>
         </div>
