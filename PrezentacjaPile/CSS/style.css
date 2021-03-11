@@ -1,124 +1,16 @@
-/* font */
-/* font-family: 'Roboto', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* colour code */
+/* List of colors */
 :root{
-    --pumpkin: #F47820;
-    --black: #000000;
-    --orangePeel: #F99C19;
-    --platinum: #E1E1E1;
-    --sonicSilver: #707070;
+  --platinum: #E1E1E1;
+  --sonicSilver: #161616;
+  --black:#000000;
+  --pumpkin: #F47820;
+  --orangePeel: #F99C19;
 }
-/* general settings */
-body{
-    background-color: var(--orangePeel);
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
+
+
+p{
+  color: var(--black);
+  background-color: var(--platinum);
+  opacity: 0.75;
+  font-weight: bold;
 }
-/* list */
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-/* navigation */
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--black);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 1440px;
-    padding: 10px 50px;
-    box-sizing: border-box;
-    z-index: 1;
-}
-.logo{
-    position: absolute;
-    width: 90.85px;
-    height: 50px;
-    left: 11px;
-    top: 5px;
-}
-.menu{
-    display: flex;
-}
-.menu li a{
-    color: var(--platinum);
-    padding: 10px 15px;
-    font-size: 18px;
-    line-height: 21px;
-}
-/* background Image */
-.backImage{
-    position: absolute;
-    width: 1440px;
-    height: 964px;
-    left: 0px;
-}
-/* home */
-.about{
-    position: absolute;
-    width: 560px;
-    height: 260px;
-    left: 56px;
-    top: 332px;
-/* --platinum */
-    background-color: #E1E1E1;
-    opacity: 0.7;
-    border-radius: 39px;
-/* text */
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: var(--black);
-}
-.about .aboutPile{
-    padding: 24px 45px 24px 25px;
-}
-.about .usefulSoftware{
-    padding: 20px 45px 24px 45px;
-}
-/* let's get started button */
-.letsGetStarted{
-    position: absolute;
-    box-sizing: border-box;
-    width: 267px;
-    height: 58px;
-    left: 203px;
-    top: 642px;
-    background-color: var(--pumpkin);
-    border-radius: 15px;
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color:var(--black);
-}
-#pileVer{
-    box-sizing: border-box;
-    position: absolute;
-    width: 300px;
-    height: 46px;
-    left: 11px;
-    top: 881px;
-    background-color: var(--black);
-    border-radius: 15px;
-    font-size: 16px;
-    color: var(--platinum);
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-/* analysis options */

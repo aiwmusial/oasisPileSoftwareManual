@@ -1,0 +1,39 @@
+/* List of colors */
+:root{
+    --platinum: #E1E1E1;
+    --sonicSilver: #161616;
+    --black:#000000;
+    --pumpkin: #F47820;
+    --orangePeel: #F99C19;
+  }
+
+/* text */
+h1{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 90px;
+    border-radius: 15px;
+    background-color: var(--black);
+    color: var(--platinum);
+}
+.pPlatinum{
+    background-color: var(--platinum);
+    color: var(--black);
+    border-radius: 35px;
+    padding: 10px;
+}
+.pPumpkin{
+    background-color: var(--pumpkin);
+    color: white;
+    border-radius: 35px;
+    padding: 10px;
+}
+.pPileVersion{
+    background-color: var(--black);
+    color: var(--platinum);
+    border-radius: 35px;
+    padding: 10px;
+}
