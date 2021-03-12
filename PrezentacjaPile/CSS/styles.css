@@ -37,3 +37,6 @@ h1{
     border-radius: 35px;
     padding: 10px;
 }
+.sup1{
+    vertical-align: super;
+}
