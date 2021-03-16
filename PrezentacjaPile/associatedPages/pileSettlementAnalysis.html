@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Anna Musiał">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Interactive Oasys Pile Software Manual</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../../PrezentacjaPile/Images/Logo-Small-Letterhead.jpg" alt="GDG logo" class="img-fluid" style="height: 50px;"></a>
+          <button class="text-white navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="text-center nav-item">
+                <a class="px-3 nav-link active text-light text-uppercase fw-bold" aria-current="page" href="../../pileSoftwareManual.html#home">Home</a>
+              </li>
+              <li class="text-center nav-item">
+                <a class="px-3 nav-link text-light text-uppercase fw-bold" href="../../pileSoftwareManual.html#analysisOption">Analysis Options</a>
+              </li>
+              <li class="text-center nav-item">
+                <a class="px-3 nav-link text-light text-uppercase fw-bold" href="../../pileSoftwareManual.html#capacityData">Capacity Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="px-3 nav-link text-light text-uppercase fw-bold" href="./pileSettlementAnalysis.html">Settlement</a>
+              </li>
+              <li class="text-center nav-item">
+                <a class="px-3 nav-link text-light text-uppercase fw-bold" href="../../pileSoftwareManual.html#pileProperties">Pile Properties</a>
+              </li>
+              <li class="text-center nav-item">
+                <a class="px-3 nav-link text-light text-uppercase fw-bold" href="../../pileSoftwareManual.html#materialProperties">Material Properties</a>
+              </li>
+              <li class="text-center nav-item">
+                <a class="px-3 nav-link text-light text-uppercase fw-bold" href="../../pileSoftwareManual.html#soilProfiles">Soil Profiles</a>
+              </li>
+              <li class="text-center nav-item">
+                <a class="px-3 nav-link text-light text-uppercase fw-bold" href="../../pileSoftwareManual.html#loads">Loads and Displacements</a>
+              </li>
+              <li class="text-center nav-item">
+                <a class="px-3 nav-link text-light text-uppercase fw-bold" href="../../pileSoftwareManual.html#output">Output</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Settlement -->
+    <section id="settlement" class="bg-secondary">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 my-5">
+                    <p class="pPlatinum">
+                        Settlements are calculated for only solid circular cross-sections without under-ream!
+                    </p>
+                    <p class="pPlatinum">
+                        There are two settlement analysis methods: MINDLIN and t-z curves. Both analysis methods allow to refine the results increments.
+                    </p>          
+                    <p class="pPlatinum">
+                        MINDLIN analysis requires to fill in only the information presented in figure on the left. When you filled in all required data, simply confirm by pressing 'OK'.
+                    </p>
+                </div>
+                <div class="col-lg-6 my-5">
+                    <div class="mx-auto">
+                        <img src="../Images/SettlementData.PNG" alt="choice of the settlement analysis type" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- t-z curves -->
+    <section class="bg-warning">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 my-5">
+                    <div>
+                        <img src="../Images/SettlementDataT-Z.PNG" alt="t-z curve analysis input in Settlement Data tab" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 my-5">
+                    <p class="pPlatinum">
+                        If you select the calculation method to be 't-z curves', all you have to input here is the number of pile elements and number of increments. 
+                    </p>
+                    <p class="pPlatinum">
+                        You still can refine the increment results print.
+                    </p>
+                    <p class="pPlatinum">
+                        Please note that the 't-z' curves analysis required additional inputin 'Material Properties'. Please see what additional information is required.
+                    </p>
+                    <div class="col-lg-5 d-flex align-items-end">
+                        <a href="#leftMenuT-Z" class="btn btn-dark fw-bold me-auto pPileVersion">Jump to the next sections to see what additional input is required.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- t-z curves additional input left menu -->
+    <section class="bg-dark" id="leftMenuT-Z">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 my-5">
+                    <div class="mx-auto">
+                        <img src="../Images/leftMenu.PNG" alt="left menu" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-lg-4 my-5">
+                    <p class="pPlatinum">
+                        As soon as you hit 'OK' button in 'Settlement Data' section, left-hand-side menu expands below the 'Material Properties'.
+                    </p>
+                    <p class="pPlatinum">
+                        The additional information to be input require t-z curves and tip load curves.  
+                    </p>
+                </div>
+                <div class="col-lg-4 my-5">
+                    <div>
+                        <img src="../Images/leftMenuT-Z.PNG" alt="expanded left-menu for the information required in the t-z curve analysis">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
